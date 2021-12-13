@@ -16,6 +16,7 @@
 		9CC7E4FF27618C010099A647 /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7E4FE27618C010099A647 /* GiftTests.swift */; };
 		9CC7E50927618C010099A647 /* GiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7E50827618C010099A647 /* GiftUITests.swift */; };
 		9CC7E50B27618C010099A647 /* GiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7E50A27618C010099A647 /* GiftUITestsLaunchTests.swift */; };
+		9CC7E5192766E3090099A647 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7E5182766E3090099A647 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9CC7E50427618C010099A647 /* GiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC7E50827618C010099A647 /* GiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftUITests.swift; sourceTree = "<group>"; };
 		9CC7E50A27618C010099A647 /* GiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CC7E5182766E3090099A647 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		9CC7E4E627618C000099A647 /* Gift */ = {
 			isa = PBXGroup;
 			children = (
+				9CC7E5172766E2DD0099A647 /* ViewControllers */,
 				9CC7E4E727618C000099A647 /* AppDelegate.swift */,
 				9CC7E4E927618C000099A647 /* SceneDelegate.swift */,
-				9CC7E4EB27618C000099A647 /* ViewController.swift */,
 				9CC7E4ED27618C000099A647 /* Main.storyboard */,
 				9CC7E4F027618C010099A647 /* Assets.xcassets */,
 				9CC7E4F227618C010099A647 /* LaunchScreen.storyboard */,
@@ -125,6 +127,15 @@
 				9CC7E50A27618C010099A647 /* GiftUITestsLaunchTests.swift */,
 			);
 			path = GiftUITests;
+			sourceTree = "<group>";
+		};
+		9CC7E5172766E2DD0099A647 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CC7E4EB27618C000099A647 /* ViewController.swift */,
+				9CC7E5182766E3090099A647 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				9CC7E4EC27618C000099A647 /* ViewController.swift in Sources */,
 				9CC7E4E827618C000099A647 /* AppDelegate.swift in Sources */,
 				9CC7E4EA27618C000099A647 /* SceneDelegate.swift in Sources */,
+				9CC7E5192766E3090099A647 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

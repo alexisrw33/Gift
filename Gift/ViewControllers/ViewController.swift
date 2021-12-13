@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var slider: UISlider!
     
     @IBOutlet weak var heatValue: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        defaults.set(0, forKey: "DarkMode")
+        
         heatValue.text = String(0)
     }
 
@@ -27,6 +31,17 @@ class ViewController: UIViewController {
         }
         
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        print("true")
+        let defaults = UserDefaults.standard
+        let darkMode = defaults.integer(forKey: "DarkMode")
+        if (darkMode == 1) {
+            overrideUserInterfaceStyle = .dark
+        } else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     
 }
